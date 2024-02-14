@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    p {
+        @apply my-1
+    }
+}
+
+@layer components {
+    .btn-link {
+        @apply p-1 text-blue-800
+    }
+    .btn-link--hover {
+      @apply bg-cyan-800 rounded-full underline text-gray-300 transition delay-150 ease-linear
+    }
+  }
